@@ -121,7 +121,7 @@ public class TimesNewRomanTest {
         ByteArrayOutputStream result = new ByteArrayOutputStream();
         PrintStream ps = new PrintStream(result);
         PrintStream current = System.out;
-        System.setOut(ps);
+        System.setOut(ps); 
         font.print();
         System.out.flush();
         System.setOut(current);
